@@ -57,6 +57,12 @@ header{
     height: 90%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     position: relative;
     /*border: 1px solid #fff;*/
+}
+
+.descricao{
+    width: 500px;
+    border: 1px solid red;
 }
