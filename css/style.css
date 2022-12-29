@@ -77,10 +77,21 @@ header{
 .avatar .circulo{
     position: absolute;
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     background-color: #28292d;
+    /*background-color: #00ff84;*/
+}
+.avatar .circulo::before{
+    content: '';
+    position: absolute;
+    left: -10%;
+    bottom: -30px;
+    width: 120%;/*500px*/
+    height: 20px;
+    border-radius: 20px;
+    background-color: #2d2e32;
 }
 
 .avatar img{
