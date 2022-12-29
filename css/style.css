@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*border: 1px solid #fff;*/
+    /*border: 1px solid blue;*/
     padding: 0 50px;
 }
 
@@ -65,4 +65,25 @@ header{
 .descricao{
     width: 500px;
     border: 1px solid red;
+}
+
+.avatar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid #fff;*/
+}
+.avatar .circulo{
+    position: absolute;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #28292d;
+}
+
+.avatar img{
+    margin-top: -40px;
+    z-index: 1;
 }
