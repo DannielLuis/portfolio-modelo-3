@@ -6,10 +6,17 @@
 
     /* text colors */
     --text-white: hsla(0, 0%, 100%, 1);
+    --text-verde: #29D882;
+    --text-verde-2: #00ff84;
+    --text-tertiary: #88949B;
 
     /* font size */
-    --fontSize-1: 4.6rem;
-    --fontSize-2: 3rem;
+    --fontSize-1: 1.7rem;
+    --fontSize-2: 2rem;
+    --fontSize-3: 2.3rem;
+    --fontSize-4: 2.5rem;
+    --fontSize-5: 3rem;
+    --fontSize-6: 5rem;
 }
 
 *{
@@ -41,8 +48,8 @@ header{
 }
 
 .navbar .logo{
-    font-size: var(--fontSize-2);
-    color: #fff;
+    font-size: var(--fontSize-5);
+    color: var(--text-white);
     text-decoration: none;
     font-weight: bold;
 }
@@ -59,8 +66,8 @@ header{
 }
 
 .menu a{
-    font-size: 1.7rem;
-    color: #fff;
+    font-size: var(--fontSize-2);
+    color: var(--text-white);
     text-decoration: none;
 }
 
@@ -82,20 +89,20 @@ header{
 .descricao span{
     margin: 0 20px;
     letter-spacing: 1.5px;
-    font-size: 2.5rem;
+    font-size: var(--fontSize-4);
     color: var(--text-white);
    /* border: 1px solid var(--text-white);*/
 }
 
 .descricao h1{
-    font-size: 5rem;
-    color: #00ff84;
+    font-size: var(--fontSize-6);
+    color: var(--text-verde-2);
 }
 
 .descricao p{
-    font-size: 2.3rem;
+    font-size: var(--fontSize-3);
     letter-spacing: 1px;
-    color: #88949B;
+    color: var(--text-tertiary);
 }
 
 .avatar{
@@ -112,7 +119,7 @@ header{
     height: 450px;
     border-radius: 50%;
     /*background-color: #28292d;*/
-    background-color: #29D882;
+    background-color: var(--text-verde);
     /*background-color: #00ff84;*/
 }
 .avatar .circulo::before{
@@ -123,7 +130,7 @@ header{
     width: 120%;/*500px*/
     height: 20px;
     border-radius: 20px;
-    background-color: #2d2e32;
+    background-color: var(--bg);
 }
 
 .avatar img{
