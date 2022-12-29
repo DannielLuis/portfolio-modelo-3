@@ -1,5 +1,4 @@
 /**/
-
 :root{
     /* background colors */
     --bg: #2d2e32; /*Mais claro*/
@@ -76,8 +75,27 @@ header{
 }
 
 .descricao{
-    width: 500px;
-    border: 1px solid red;
+    width: 410px;
+    /*border: 1px solid red;*/
+}
+
+.descricao span{
+    margin: 0 20px;
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    color: var(--text-white);
+   /* border: 1px solid var(--text-white);*/
+}
+
+.descricao h1{
+    font-size: 5rem;
+    color: #00ff84;
+}
+
+.descricao p{
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    color: #88949B;
 }
 
 .avatar{
@@ -93,7 +111,8 @@ header{
     width: 450px;
     height: 450px;
     border-radius: 50%;
-    background-color: #28292d;
+    /*background-color: #28292d;*/
+    background-color: #29D882;
     /*background-color: #00ff84;*/
 }
 .avatar .circulo::before{
