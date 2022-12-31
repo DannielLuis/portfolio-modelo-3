@@ -215,7 +215,19 @@ main{
 .div_descricao{
     width: 50%;
     height: 350px;
-    border: 1px solid red;
+    padding: 20px;
+    /*border: 1px solid red;*/
+}
+
+.div_descricao h2{
+    font-size: var(--fontSize-4);
+    color: var(--text-white);
+    /*border: 1px solid #fff;*/
+}
+
+.div_descricao p{
+    font-size: var(--fontSize-1);
+    color: var(--text-tertiary);
 }
 
 .conteiner_cursos{
@@ -236,3 +248,5 @@ main{
     border: 1px solid #fff;
     background-color: var(--bg);
 }
+
+/* 252 linhas */
