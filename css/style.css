@@ -207,6 +207,11 @@ main{
     border: 2px solid gray;
 }
 
+.div_foto > img{
+    width: 350px;
+    transform: translateX(-40px) rotate(-9deg);
+}
+
 .div_descricao{
     width: 50%;
     height: 350px;
