@@ -12,6 +12,12 @@
     --text-verde-2: #00ff84;
     --text-tertiary: #88949B;
 
+    /* scrollbar colors */
+    --scrollbar-white: #fff;
+    --scrollbar-verde-2: #29D882;
+    --scrollbar-verde-3: #45fda4;
+    --scrollbar-verde-4: #71eeb2;
+
     /* font size */
     --fontSize-1: 1.7rem;
     --fontSize-2: 2rem;
@@ -40,6 +46,22 @@ h2{
 
 html, body, main{
     width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: var(--bg);
+    /*border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-radius: 7px;*/
+    border: 2px solid #181d23;
+}/*
+::-webkit-scrollbar-track {
+    border-inline-start: 2px solid #181d23;
+}*/
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--scrollbar-white);
 }
 
 header, #sobre{
