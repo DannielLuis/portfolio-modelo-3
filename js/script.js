@@ -4,8 +4,16 @@ const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
 const cursos = document.querySelector(".conteiner_cursos");
 
+//const dataUrl = "site/admin"
+const dataUrl = "./"
+
+function updateUrl(newUrl){
+    history.pushState(null, null, newUrl);
+}
+
 window.onload = function(){
     location.href = "index.html#projetos";
+    updateUrl(dataUrl)
 }
 /*
 window.addEventListener("load", () => {
