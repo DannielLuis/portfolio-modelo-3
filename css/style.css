@@ -86,6 +86,19 @@ header, #sobre, #projetos{
     /*border-bottom: 1px solid #fff;*/
 }
 
+.btn-hamburger{
+    /*display: none;*/
+    cursor: pointer;
+}
+
+.linha1, .linha2, .linha3{
+    width: 40px;
+    height: 3px;
+    margin: 10px;
+    background-color: white;
+    transition: .2s;
+}
+
 .menu{
     display: inherit;
     gap: 25px;
