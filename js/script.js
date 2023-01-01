@@ -10,11 +10,11 @@ const dataUrl = "./"
 function updateUrl(newUrl){
     history.pushState(null, null, newUrl);
 }
-
+/*
 window.onload = function(){
     location.href = "index.html#projetos";
     updateUrl(dataUrl)
-}
+}*/
 /*
 window.addEventListener("load", () => {
     //alert("Testando")

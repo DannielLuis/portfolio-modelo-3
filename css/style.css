@@ -74,11 +74,16 @@ header, #sobre, #projetos{
 .navbar{
     width: 100%;
     /*height: 70px;*/
-    height: 13%;
+    height: 10%;/*13%*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 70px;
+    padding: 0 12%;/*0 70px*/
+    position: fixed;
+    background-color: transparent;
+    /*transition: .5s linear;*/
+    z-index: 10;
+    /*border-bottom: 1px solid #fff;*/
 }
 
 .menu{
@@ -246,7 +251,7 @@ header, #sobre, #projetos{
     flex-direction: column;
 }
 
-.center{
+.center1{
     width: 80%;
     height: 80%;
     display: flex;
