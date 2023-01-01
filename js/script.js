@@ -1,4 +1,5 @@
 //
+const btn_hamburger = document.querySelector(".btn-hamburger");
 const btn_sobre = document.getElementById("btn_sobre");
 const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
@@ -10,6 +11,13 @@ const dataUrl = "./"
 function updateUrl(newUrl){
     history.pushState(null, null, newUrl);
 }
+
+function btnClick(){
+    btn_hamburger.classList.toggle("clicked");
+}
+
+btn_hamburger.addEventListener("click", btnClick);
+
 /*
 window.onload = function(){
     location.href = "index.html#projetos";

@@ -89,6 +89,7 @@ header, #sobre, #projetos{
 .btn-hamburger{
     /*display: none;*/
     cursor: pointer;
+    /*border: 1px solid #fff;*/
 }
 
 .linha1, .linha2, .linha3{
@@ -97,6 +98,20 @@ header, #sobre, #projetos{
     margin: 10px;
     background-color: white;
     transition: .2s;
+}
+
+.linha2{
+    height: 4px;
+}
+
+.clicked .linha1{
+    transform: rotate(-135deg) translate(-9px, -10px);
+}
+.clicked .linha2{
+    opacity: 0;
+}
+.clicked .linha3{
+    transform: rotate(135deg) translate(-9px, 10px);
 }
 
 .menu{
