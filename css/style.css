@@ -134,6 +134,7 @@ header, #sobre, #projetos{
 }
 
 .menu_mobile{
+    display: none;
     position: absolute;
     width: 100%;
     top: 64px;
@@ -150,6 +151,10 @@ header, #sobre, #projetos{
     border-bottom: 2px solid rgba(170, 158, 158, 0.151);
 }
 
+.active_menu{
+    display: block;
+}
+
 @media screen and (max-width: 768px){
     .navbar{
         padding: 0 8%;
@@ -162,6 +167,14 @@ header, #sobre, #projetos{
 
     .btn-hamburger{
         display: block;
+    }
+
+    .avatar{
+        display: none !important;
+    }
+
+    .center1{
+        flex-direction: column;
     }
 }
 

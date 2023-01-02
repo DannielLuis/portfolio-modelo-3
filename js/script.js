@@ -1,5 +1,6 @@
 //
 const btn_hamburger = document.querySelector(".btn-hamburger");
+const menu_mobile = document.querySelector(".menu_mobile");
 const btn_sobre = document.getElementById("btn_sobre");
 const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
@@ -14,6 +15,7 @@ function updateUrl(newUrl){
 
 function btnClick(){
     btn_hamburger.classList.toggle("clicked");
+    menu_mobile.classList.toggle("active_menu");
 }
 
 btn_hamburger.addEventListener("click", btnClick);
