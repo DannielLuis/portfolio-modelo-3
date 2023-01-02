@@ -80,14 +80,17 @@ header, #sobre, #projetos{
     justify-content: space-between;
     padding: 0 12%;/*0 70px*/
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: transparent;
     /*transition: .5s linear;*/
     z-index: 10;
-    /*border-bottom: 1px solid #fff;*/
+    /*border: 3px solid blue;*/
+   /* border-bottom: 1px solid #fff;*/
 }
 
 .btn-hamburger{
-    /*display: none;*/
+    display: none;
     cursor: pointer;
     /*border: 1px solid #fff;*/
 }
@@ -126,6 +129,20 @@ header, #sobre, #projetos{
 .menu a{
     font-size: var(--fontSize-2);
     color: var(--text-white);
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 0 8%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .btn-hamburger{
+        display: block;
+    }
 }
 
 #inicio{
@@ -313,3 +330,6 @@ header, #sobre, #projetos{
     border: 1px solid #fff;
     background-color: var(--bg);
 }
+
+
+/* 355 linhas */
