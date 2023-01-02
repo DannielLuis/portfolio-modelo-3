@@ -3,7 +3,9 @@
     /* background colors */
     --bg: #2d2e32; /*Mais claro*/
     --bg2: #25262a; /*Mais escuro*/
-    /*background-color: #28292d;*/
+    --bg3: #28292d;
+    --bg4: #28292d94;
+    --bg5: #171C23;
     /*background-color: #00ff84;*/
 
     /* text colors */
@@ -131,9 +133,27 @@ header, #sobre, #projetos{
     color: var(--text-white);
 }
 
+.menu_mobile{
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    left: 0px;
+    background-color: var(--bg5);
+}
+
+.menu_mobile a {
+    display: block;
+    font-size: var(--fontSize-2);
+    color: var(--text-white);
+    padding: 1rem 0.2rem;
+    margin: 0 2rem;
+    border-bottom: 2px solid rgba(170, 158, 158, 0.151);
+}
+
 @media screen and (max-width: 768px){
     .navbar{
         padding: 0 8%;
+        background-color: var(--bg5);
     }
 
     .menu{
