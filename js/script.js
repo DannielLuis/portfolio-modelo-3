@@ -3,6 +3,9 @@ const html1 = document.querySelector("html");
 const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
 const menu_mobile = document.querySelector(".menu_mobile");
+const link1 = document.querySelector(".link-1");
+const link2 = document.querySelector(".link-2");
+const link3 = document.querySelector(".link-3");
 const btn_sobre = document.getElementById("btn_sobre");
 const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
@@ -36,6 +39,15 @@ function btnClick(){
 
 btn_hamburger.addEventListener("click", btnClick);
 
+link1.addEventListener('click', () => {
+    btnClick()
+});
+link2.addEventListener('click', () => {
+    btnClick()
+});
+link3.addEventListener('click', () => {
+    btnClick()
+});
 /*
 window.onload = function(){
     location.href = "index.html#projetos";
