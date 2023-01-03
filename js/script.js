@@ -1,4 +1,5 @@
 //
+const dataUrl = "./"
 const html1 = document.querySelector("html");
 const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
@@ -6,10 +7,21 @@ const menu_mobile = document.querySelector(".menu_mobile");
 const link1 = document.querySelector(".link-1");
 const link2 = document.querySelector(".link-2");
 const link3 = document.querySelector(".link-3");
-const btn_sobre = document.getElementById("btn_sobre");
+/*const btn_sobre = document.getElementById("btn_sobre");
 const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
-const cursos = document.querySelector(".conteiner_cursos");
+const cursos = document.querySelector(".conteiner_cursos");*/
+
+
+window.onload = function(){
+    location.href = "index.html#sobre";
+    updateUrl(dataUrl)
+}
+/*
+window.addEventListener("load", () => {
+    //alert("Testando")
+    location.href = "index.html#projetos";
+});*/
 
 //console.log(html1.scrollTop);
 
@@ -24,9 +36,6 @@ function myscroll(){
 }
 
 document.onscroll=myscroll
-
-//const dataUrl = "site/admin"
-const dataUrl = "./"
 
 function updateUrl(newUrl){
     history.pushState(null, null, newUrl);
@@ -49,16 +58,6 @@ link3.addEventListener('click', () => {
     btnClick()
 });
 /*
-window.onload = function(){
-    location.href = "index.html#projetos";
-    updateUrl(dataUrl)
-}*/
-/*
-window.addEventListener("load", () => {
-    //alert("Testando")
-    location.href = "index.html#projetos";
-});*/
-
 btn_sobre.addEventListener("click", () => {
     sobre.classList.add("ativo");
     cursos.classList.remove("ativo");
@@ -67,4 +66,4 @@ btn_sobre.addEventListener("click", () => {
 btn_cursos.addEventListener("click", () => {
     sobre.classList.remove("ativo");
     cursos.classList.add("ativo");
-});
+});*/
