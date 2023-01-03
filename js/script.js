@@ -1,10 +1,26 @@
 //
+const html1 = document.querySelector("html");
+const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
 const menu_mobile = document.querySelector(".menu_mobile");
 const btn_sobre = document.getElementById("btn_sobre");
 const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
 const cursos = document.querySelector(".conteiner_cursos");
+
+//console.log(html1.scrollTop);
+
+function myscroll(){
+    //console.log(html1.scrollTop);
+    if(html1.scrollTop > 50) {
+        //alert("Maior que 60")
+        navbar.classList.add("navbar-bg");
+    }else{
+        navbar.classList.remove("navbar-bg");
+    }
+}
+
+document.onscroll=myscroll
 
 //const dataUrl = "site/admin"
 const dataUrl = "./"
