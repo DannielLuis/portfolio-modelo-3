@@ -172,14 +172,6 @@ header, #sobre, #projetos{
     .btn-hamburger{
         display: block;
     }
-/*
-    .avatar{
-        display: none !important;
-    }*/
-
-    .center1{
-        flex-direction: column;
-    }
 }
 
 #inicio{
@@ -220,8 +212,8 @@ header, #sobre, #projetos{
 }
 
 .avatar{
-    width: clamp(20rem, 40vw, 590px);
-    height: clamp(20rem, 40vw, 590px);
+    width: clamp(20rem, 35vw, 590px);
+    height: clamp(20rem, 35vw, 590px);
     position: relative;
     display: flex;
     align-items: center;
@@ -382,4 +374,27 @@ header, #sobre, #projetos{
 }
 
 
+@media screen and (max-width: 650px){
+    #inicio{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .avatar{
+        margin-top: 8%;
+        margin-bottom: -10%;
+        /*border: 1px solid red;*/
+    }
+
+    .center1{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .avatar{
+        width: 90vw;
+        height: 90vw;
+    }
+}
 /* 355 linhas */
