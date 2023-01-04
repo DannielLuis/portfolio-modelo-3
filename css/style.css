@@ -242,9 +242,9 @@ header, #sobre, #projetos{
 .conteiner{
     /* Observação o clamp não trava 100%
     no valor menor, fazer alguns testes.*/
-    width: clamp(44rem, 90vw, 1090px);
+    width: clamp(44rem, 90vw, 1300px);
     height: clamp(25rem, 80vh, 1090px);
-    min-width: 44rem;
+   /* min-width: 44rem;*/
     background-color: var(--bg2);
     border-radius: 20px;
     margin-top: 14vh;
@@ -254,7 +254,7 @@ header, #sobre, #projetos{
 .conteiner > h2{
     width: 100%;
     height: 15%;
-    color: var(--text-verde);
+    color: var(--text-white);
     font-size: 3rem;
     border-bottom: 3px solid var(--bg);
 }
@@ -283,6 +283,15 @@ header, #sobre, #projetos{
     width: 50%;
     height: 350px;
     padding: 20px;
+    border: 1px solid red;
+}
+
+.div_descricao h3{
+    font-size: clamp(2.4rem, 3.5vw, 4rem);
+    color: var(--text-verde-2);
+}
+.div_descricao p{
+    font-size: clamp(1.4rem, 2vw, 2.5rem);
 }
 
 .ativo{
