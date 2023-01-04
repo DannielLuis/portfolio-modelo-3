@@ -159,21 +159,6 @@ header, #sobre, #projetos{
     display: block;
 }
 
-@media screen and (max-width: 768px){
-    .navbar{
-        padding: 0 8%;
-        background-color: var(--bg5);
-    }
-
-    .menu{
-        display: none;
-    }
-
-    .btn-hamburger{
-        display: block;
-    }
-}
-
 #inicio{
     width: 100%;
     height: 100vh;
@@ -283,7 +268,7 @@ header, #sobre, #projetos{
     width: 50%;
     height: 350px;
     padding: 20px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .div_descricao h3{
@@ -317,6 +302,43 @@ header, #sobre, #projetos{
     font-size: var(--fontSize-4);
     border: 1px solid #fff;
     background-color: var(--bg);
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 0 8%;
+        background-color: var(--bg5);
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .btn-hamburger{
+        display: block;
+    }
+
+    #sobre{
+        height: auto;
+    }
+
+    .conteiner {
+        width: 90vw;
+    }
+
+    #sobre .conteiner{
+        height: 850px;
+        margin-bottom: 12.5vh;
+    }
+
+    .conteiner_sobre{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .div_descricao{
+        width: 90%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 650px){
