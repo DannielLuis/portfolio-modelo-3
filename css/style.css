@@ -72,11 +72,15 @@ header, #sobre, #projetos{
     background-color: var(--bg2);
 }
 
+.flex_center, #sobre, #inicio, #projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navbar{
     width: 100%;
     height: 10%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 12%;
     position: fixed;
@@ -173,8 +177,6 @@ header, #sobre, #projetos{
 #inicio{
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
     position: relative;
 }
@@ -203,9 +205,6 @@ header, #sobre, #projetos{
     width: clamp(20rem, 35vw, 590px);
     height: clamp(20rem, 35vw, 590px);
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .avatar .circulo{
@@ -237,12 +236,10 @@ header, #sobre, #projetos{
 
 /* ---------- main ---------- */
 #sobre{
-    display: flex;
-    justify-content: center;
     background-color: var(--bg);
 }
 
-#sobre .conteiner{
+.conteiner{
     /* Observação o clamp não trava 100%
     no valor menor, fazer alguns testes.*/
     width: clamp(44rem, 90vw, 1090px);
@@ -257,9 +254,6 @@ header, #sobre, #projetos{
 .conteiner > h2{
     width: 100%;
     height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--text-verde);
     font-size: 3rem;
     border-bottom: 3px solid var(--bg);
@@ -297,53 +291,24 @@ header, #sobre, #projetos{
     justify-content: space-between;
 }
 
-.aviso{
-    padding: 15px 30px;
-    color: var(--text-verde-2);
-    font-size: var(--fontSize-6);
-    margin: 0 auto;
-    border: 1px solid #fff;
+#projetos .conteiner{
     background-color: var(--bg);
-}
-
-#projetos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.center1{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    border: 2px solid #fff;
 }
 
 .item{
-    width: 300px;
-    height: 350px;
+    width: calc(100% / 4 + 2rem);/*300px*/
+    height: calc(100% / 2 + 5rem);/*350px*/
     border: 2px solid #fff;
 }
 
-.em_breve{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.em_breve .aviso{
+.aviso{
     padding: 15px 30px;
     color: var(--text-verde-2);
     font-size: var(--fontSize-4);
     border: 1px solid #fff;
     background-color: var(--bg);
 }
-
 
 @media screen and (max-width: 650px){
     #inicio{
@@ -354,10 +319,6 @@ header, #sobre, #projetos{
     .avatar{
         margin-top: 8%;
         margin-bottom: -10%;
-    }
-
-    .center1{
-        flex-direction: column;
     }
 }
 
