@@ -96,6 +96,17 @@ header, #sobre, #projetos{
     background-color: #181d23;
 }
 
+/*
+#tes{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+}
+
+#test{
+    fill: #29D882;
+}*/
+
 .btn-hamburger{
     display: none;
     cursor: pointer;
