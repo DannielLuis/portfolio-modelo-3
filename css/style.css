@@ -384,6 +384,22 @@ header, #sobre, #projetos{
         width: 90%;
         height: auto;
     }
+
+    #projetos{
+        height: auto;
+    }
+
+    #projetos .conteiner{
+        height: auto;
+    }
+
+    .conteiner_projetos{
+        flex-direction: column;
+    }
+
+    .item{
+        margin: 30px 0;
+    }
 }
 
 @media screen and (max-width: 650px){
