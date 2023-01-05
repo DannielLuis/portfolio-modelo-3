@@ -239,8 +239,6 @@ header, #sobre, #projetos{
 .conteiner > h2{
     width: 100%;
     height: 15%;
-    color: var(--text-white);
-    font-size: 3rem;
     border-bottom: 3px solid var(--bg);
 }
 
@@ -285,8 +283,19 @@ header, #sobre, #projetos{
     justify-content: space-between;
 }
 
+/* ----------  SECTION PROJETO  ---------- */
 #projetos .conteiner{
     background-color: var(--bg);
+    justify-content: space-evenly;
+}
+
+#projetos .conteiner h2{
+    border-bottom: 3px solid var(--bg2);
+}
+
+.conteiner_projetos{
+    width: 100%;
+    height: 85%;
     justify-content: space-evenly;
 }
 

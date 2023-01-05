@@ -42,8 +42,8 @@ window.onload = function(){
 }*/
 
 window.addEventListener("load", () => {
-    location.href = "index.html#sobre";
-    //location.href = "index.html#projetos";
+    //location.href = "index.html#sobre";
+    location.href = "index.html#projetos";
     updateUrl(dataUrl)
 });
 
