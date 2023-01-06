@@ -4,11 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel</title>
+
+    <!-- meta tag description -->
+    <meta name="description" content="Portfólio do desenvolvedor front-end web Daniel Luis">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./imagens/favicon.svg" type="image/svg+xml">
+
+    <title>Daniel Luis - Portfólio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <header>
+        <nav class="navbar flex_center">
+            <a class="logo" href="./" alt="logo" title="Daniel Luis">
+                <svg id="tes" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                    <!-- width="50" height="50"-->
+                    <path id="test" d="M5.144 42.92C4.38133 42.92 4 42.6773 4 42.192V42.036C4 41.724 4.32933 41.2733 4.988 40.684C5.64667 40.06 5.976 39.3667 5.976 38.604V10.316C5.976 9.55333 5.64667 8.87733 4.988 8.288C4.32933 7.664 4 7.196 4 6.884V6.728C4 6.24267 4.38133 6 5.144 6H16.584C22.9627 6 28.1973 7.75067 32.288 11.252C36.4133 14.7187 38.476 19.0693 38.476 24.304C38.476 29.9547 36.6387 34.4787 32.964 37.876C29.324 41.2387 24.644 42.92 18.924 42.92H5.144ZM15.284 40.268H18.56C22.512 40.268 25.736 39.0373 28.232 36.576C30.7627 34.1147 32.028 30.804 32.028 26.644C32.028 21.4787 30.4333 17.1973 27.244 13.8C24.0547 10.368 20.1027 8.652 15.388 8.652H13.932C12.7533 8.652 12.164 9.29333 12.164 10.576V36.576C12.164 37.7547 12.4413 38.6733 12.996 39.332C13.5507 39.956 14.3133 40.268 15.284 40.268Z" fill="#29D882"/>
+                </svg>
+            </a>
+
+            <div class="btn-hamburger">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <!--<li><a href="#habilidades">Habilidades</a></li>-->
+            </ul>
+
+            <ul class="menu_mobile">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <!--<li><a href="#habilidades">Habilidades</a></li>-->
+            </ul>
+        </nav>
+
+        <section id="inicio">
+            <div class="descricao">
+                <span>Oi, eu sou</span>
+                <h1 title="Daniel Luis">Daniel Luis</h1>
+                <p>Desenvolvedor Front-end</p>
+                <!--Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt vero eum maiores accusamus necessitatibus commodi.-->
+            </div>
+
+            <div class="avatar flex_center">
+                <div class="circulo"></div>
+                <img src="./imagens/avatar.webp" alt="Daniel-avatar" title="Daniel Luis">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="conteiner">
+                <h2 class="flex_center">SOBRE</h2>
+                
+                <div class="conteiner_sobre ativo">
+                    <div class="div_foto">
+                        <img src="./imagens/foto.jpg" alt="foto" title="Daniel Luis">
+                    </div>
+                    <div class="div_descricao">
+                        <h3 title="Daniel Luis">Daniel Luis</h3>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rerum esse cumque voluptatum fuga eligendi quis veniam aliquam optio, provident fugit consequatur soluta quos ab beatae pariatur quam doloremque sed.</p>
+                    </div>
+                </div>
+            </div>
+        </section><!--sobre-->
+
+        <section id="projetos">
+            <div class="conteiner">
+                <h2 class="flex_center">PROJETOS</h2>
+
+                <div class="conteiner_projetos flex_center">
+                    <article class="item">
+                        <!--<h3 class="aviso">Em breve</h3>-->
+                        <div class="item_img flex_center">
+                            <h3 class="aviso">Em breve</h3>
+                        </div>
+                        <p style="margin: 10px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        
+                        <p class="tec">Tecnologias usadas:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <button type="button" class="btn">Ver Projeto</button>
+                    </article>
+
+                    <article class="item">
+                        <div class="item_img flex_center">
+                            <h3 class="aviso">Em breve</h3>
+                        </div>
+                        <p style="margin: 10px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        
+                        <p class="tec">Tecnologias usadas:</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <button type="button" class="btn hhh">Ver Projeto</button>
+                    </article>
+
+                    <!--<article class="item flex_center">
+                        <img src="./imagens/screen2.jpg">
+                    </article>-->
+                </div>
+            </div>
+        </section><!--projetos-->
+    </main>
+
+    <footer class="flex_center">
+        <p>
+            Pagina desenvolvida por: 
+            <a href="./">
+                Daniel Luis
+            </a> | Front-end web
+        </p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
