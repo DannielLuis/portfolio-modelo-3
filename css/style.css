@@ -189,6 +189,7 @@ header, #sobre, #projetos{
     font-size: max(3.6rem, 6vw);
     /*font-size: clamp(3.5rem, 6vw, 10em);*/
     color: var(--text-verde-2);
+    cursor: default;
 }
 
 .descricao p{
@@ -283,6 +284,7 @@ header, #sobre, #projetos{
 .div_descricao h3{
     font-size: clamp(2.4rem, 3.5vw, 4rem);
     color: var(--text-verde-2);
+    cursor: default;
 }
 .div_descricao p{
     font-size: clamp(1.4rem, 2vw, 2.5rem);
