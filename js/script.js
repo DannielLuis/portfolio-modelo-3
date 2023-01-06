@@ -5,6 +5,7 @@ const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
 const menu_mobile = document.querySelector(".menu_mobile");
 
+const itensMenu = document.querySelectorAll(".menu li")
 const link = document.querySelectorAll(".menu_mobile li");
 /*const btn_sobre = document.getElementById("btn_sobre");
 const btn_cursos = document.getElementById("btn_cursos");
@@ -27,6 +28,12 @@ function updateUrl(newUrl){
     history.pushState(null, null, newUrl);
 }
 
+function myTime(tempo) {
+    setTimeout(function(){
+        updateUrl(dataUrl)
+    }, tempo);
+}
+
 function btnClick(){
     btn_hamburger.classList.toggle("clicked");
     menu_mobile.classList.toggle("active_menu");
@@ -46,9 +53,22 @@ window.addEventListener("load", () => {
 
 btn_hamburger.addEventListener("click", btnClick);
 
-link[0].addEventListener('click', () => btnClick());
-link[1].addEventListener('click', () => btnClick());
-link[2].addEventListener('click', () => btnClick());
+itensMenu[0].addEventListener("click", () => myTime(15));
+itensMenu[1].addEventListener("click", () => myTime(15));
+itensMenu[2].addEventListener("click", () => myTime(15));
+
+link[0].addEventListener('click', () => {
+    btnClick()
+    myTime(15)
+});
+link[1].addEventListener('click', () => {
+    btnClick()
+    myTime(15)
+});
+link[2].addEventListener('click', () => {
+    btnClick()
+    myTime(15)
+});
 
 /*
 btn_sobre.addEventListener("click", () => {
