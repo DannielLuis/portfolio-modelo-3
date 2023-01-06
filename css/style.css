@@ -198,6 +198,22 @@ header, #sobre, #projetos{
     letter-spacing: 1px;
 }
 
+.btn_linkedin{
+    margin: 50px auto 0 auto;
+    /*border: 1px solid #fff;*/
+}
+
+.linkedin{
+    font-size: var(--fontSize-2);
+    font-weight: bold;
+    padding: .3rem 2rem;
+    cursor: pointer;
+    color: var(--bg2);
+    box-shadow: 0px 0px 8px var(--text-verde-2);
+    background-color: var(--text-verde);
+    border: none;
+}
+
 .avatar{
     width: clamp(20rem, 35vw, 590px);
     height: clamp(20rem, 35vw, 590px);
