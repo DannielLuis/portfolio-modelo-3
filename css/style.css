@@ -334,6 +334,7 @@ header, #sobre, #projetos{
     height: 400px;/*370px*/
     position: relative;
     background-color: var(--bg);
+    border: 1px solid rgba(128, 128, 128, 0.658);
 }
 
 .item_img{
@@ -341,6 +342,11 @@ header, #sobre, #projetos{
     height: 50%;
     background-color: gray;
 }
+.item_img img{
+    width: 100%;
+    height: 100%;
+}
+
 .item p{
     font-size: 1.3rem;
     color: var(--text-white);
@@ -377,9 +383,9 @@ footer{
 }
 
 footer p{
-    font-size: 1.5rem;
-    /*border: 1px solid #fff;*/
+    font-size: clamp(1rem, 2vw, 2rem);
 }
+
 footer p a{
     color: var(--text-verde-2);
 }

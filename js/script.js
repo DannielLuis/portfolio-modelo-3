@@ -12,6 +12,9 @@ const btn_cursos = document.getElementById("btn_cursos");
 const sobre = document.querySelector(".conteiner_sobre");
 const cursos = document.querySelector(".conteiner_cursos");*/
 
+const url = "./"
+const btn1 = document.getElementById("btn1");
+
 function myscroll(){
     //console.log(html1.scrollTop);
     if(html1.scrollTop > 50) {
@@ -38,6 +41,11 @@ function btnClick(){
     btn_hamburger.classList.toggle("clicked");
     menu_mobile.classList.toggle("active_menu");
 }
+
+function abrirProjeto(url){
+    const win = window.open(url, "blank");
+    win.focus();
+};
 
 /*
 window.onload = function(){
@@ -69,6 +77,11 @@ link[2].addEventListener('click', () => {
     btnClick()
     myTime(15)
 });
+
+btn1.addEventListener("click", () => {
+    abrirProjeto(url)
+}
+);
 
 /*
 btn_sobre.addEventListener("click", () => {
