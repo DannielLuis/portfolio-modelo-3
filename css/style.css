@@ -377,9 +377,9 @@ footer{
 }
 
 footer p{
-    font-size: 1.5rem;
-    /*border: 1px solid #fff;*/
+    font-size: clamp(1rem, 2vw, 2rem);
 }
+
 footer p a{
     color: var(--text-verde-2);
 }
