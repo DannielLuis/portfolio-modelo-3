@@ -341,6 +341,11 @@ header, #sobre, #projetos{
     height: 50%;
     background-color: gray;
 }
+.item_img img{
+    width: 100%;
+    height: 100%;
+}
+
 .item p{
     font-size: 1.3rem;
     color: var(--text-white);
