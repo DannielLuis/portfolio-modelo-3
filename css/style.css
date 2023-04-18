@@ -334,6 +334,7 @@ header, #sobre, #projetos{
     height: 400px;/*370px*/
     position: relative;
     background-color: var(--bg);
+    border: 1px solid rgba(128, 128, 128, 0.658);
 }
 
 .item_img{
