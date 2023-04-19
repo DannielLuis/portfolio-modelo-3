@@ -1,6 +1,12 @@
 //
 const dataUrl = "./"
 const html1 = document.querySelector("html");
+
+const inicio = document.getElementById("inicio");
+const sobre = document.getElementById("sobre");
+const projetos = document.getElementById("projetos");
+const footer = document.querySelector("footer");
+
 const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
 const menu_mobile = document.querySelector(".menu_mobile");
@@ -58,6 +64,23 @@ window.addEventListener("load", () => {
     location.href = "index.html#projetos";
     updateUrl(dataUrl)
 });*/
+
+inicio.addEventListener("click", () => {
+    btn_hamburger.classList.remove("clicked");
+    menu_mobile.classList.remove("active_menu");
+});
+sobre.addEventListener("click", () => {
+    btn_hamburger.classList.remove("clicked");
+    menu_mobile.classList.remove("active_menu");
+});
+projetos.addEventListener("click", () => {
+    btn_hamburger.classList.remove("clicked");
+    menu_mobile.classList.remove("active_menu");
+});
+footer.addEventListener("click", () => {
+    btn_hamburger.classList.remove("clicked");
+    menu_mobile.classList.remove("active_menu");
+});
 
 btn_hamburger.addEventListener("click", btnClick);
 
