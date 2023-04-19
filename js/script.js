@@ -2,10 +2,14 @@
 const dataUrl = "./"
 const html1 = document.querySelector("html");
 
-const inicio = document.getElementById("inicio");
+/*const inicio = document.getElementById("inicio");
 const sobre = document.getElementById("sobre");
 const projetos = document.getElementById("projetos");
-const footer = document.querySelector("footer");
+const footer = document.querySelector("footer");*/
+
+const dataClick = document.querySelectorAll('[dataClick]')
+
+//console.log(dataClick)
 
 const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
@@ -65,19 +69,19 @@ window.addEventListener("load", () => {
     updateUrl(dataUrl)
 });*/
 
-inicio.addEventListener("click", () => {
+dataClick[0].addEventListener("click", () => {
     btn_hamburger.classList.remove("clicked");
     menu_mobile.classList.remove("active_menu");
 });
-sobre.addEventListener("click", () => {
+dataClick[1].addEventListener("click", () => {
     btn_hamburger.classList.remove("clicked");
     menu_mobile.classList.remove("active_menu");
 });
-projetos.addEventListener("click", () => {
+dataClick[2].addEventListener("click", () => {
     btn_hamburger.classList.remove("clicked");
     menu_mobile.classList.remove("active_menu");
 });
-footer.addEventListener("click", () => {
+dataClick[3].addEventListener("click", () => {
     btn_hamburger.classList.remove("clicked");
     menu_mobile.classList.remove("active_menu");
 });
