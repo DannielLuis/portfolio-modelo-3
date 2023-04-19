@@ -2,14 +2,7 @@
 const dataUrl = "./"
 const html1 = document.querySelector("html");
 
-/*const inicio = document.getElementById("inicio");
-const sobre = document.getElementById("sobre");
-const projetos = document.getElementById("projetos");
-const footer = document.querySelector("footer");*/
-
 const dataClick = document.querySelectorAll('[dataClick]')
-
-//console.log(dataClick)
 
 const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
@@ -74,18 +67,10 @@ const myClick = () => {
     menu_mobile.classList.remove("active_menu");
 };
 
-dataClick[0].addEventListener("click", () => {
-    myClick();
-});
-dataClick[1].addEventListener("click", () => {
-    myClick();
-});
-dataClick[2].addEventListener("click", () => {
-    myClick();
-});
-dataClick[3].addEventListener("click", () => {
-    bmyClick();
-});
+dataClick[0].addEventListener("click", () => myClick());
+dataClick[1].addEventListener("click", () => myClick());
+dataClick[2].addEventListener("click", () => myClick());
+dataClick[3].addEventListener("click", () => myClick());
 
 btn_hamburger.addEventListener("click", btnClick);
 
