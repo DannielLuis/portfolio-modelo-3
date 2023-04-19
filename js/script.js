@@ -69,21 +69,22 @@ window.addEventListener("load", () => {
     updateUrl(dataUrl)
 });*/
 
-dataClick[0].addEventListener("click", () => {
+const myClick = () => {
     btn_hamburger.classList.remove("clicked");
     menu_mobile.classList.remove("active_menu");
+};
+
+dataClick[0].addEventListener("click", () => {
+    myClick();
 });
 dataClick[1].addEventListener("click", () => {
-    btn_hamburger.classList.remove("clicked");
-    menu_mobile.classList.remove("active_menu");
+    myClick();
 });
 dataClick[2].addEventListener("click", () => {
-    btn_hamburger.classList.remove("clicked");
-    menu_mobile.classList.remove("active_menu");
+    myClick();
 });
 dataClick[3].addEventListener("click", () => {
-    btn_hamburger.classList.remove("clicked");
-    menu_mobile.classList.remove("active_menu");
+    bmyClick();
 });
 
 btn_hamburger.addEventListener("click", btnClick);
