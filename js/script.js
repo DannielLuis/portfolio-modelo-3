@@ -1,6 +1,9 @@
 //
 const dataUrl = "./"
 const html1 = document.querySelector("html");
+
+const dataClick = document.querySelectorAll('[dataClick]')
+
 const navbar = document.querySelector(".navbar");
 const btn_hamburger = document.querySelector(".btn-hamburger");
 const menu_mobile = document.querySelector(".menu_mobile");
@@ -58,6 +61,16 @@ window.addEventListener("load", () => {
     location.href = "index.html#projetos";
     updateUrl(dataUrl)
 });*/
+
+const myClick = () => {
+    btn_hamburger.classList.remove("clicked");
+    menu_mobile.classList.remove("active_menu");
+};
+
+dataClick[0].addEventListener("click", () => myClick());
+dataClick[1].addEventListener("click", () => myClick());
+dataClick[2].addEventListener("click", () => myClick());
+dataClick[3].addEventListener("click", () => myClick());
 
 btn_hamburger.addEventListener("click", btnClick);
 
