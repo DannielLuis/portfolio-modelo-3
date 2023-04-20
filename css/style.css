@@ -286,8 +286,8 @@ header, #sobre, #projetos{
 }
 
 .div_foto > img{
-    width: 350px;
-    transform: translateX(-40px) rotate(-9deg);
+    width: 300px;
+    /*height: 390px;*/
 }
 
 .div_descricao{
