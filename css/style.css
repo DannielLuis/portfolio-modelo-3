@@ -409,7 +409,7 @@ header, #sobre, #projetos{
     width: 100%;
     display: flex;
     padding-left: 1rem;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: flex-start;
     align-items: center;
     /*border: 1px solid #fff;*/
@@ -437,34 +437,20 @@ header, #sobre, #projetos{
 #linkedin{
     fill: #0288D1;
 }
+#github, #email{
+    fill: white;
+}
 
+/*
 .item_icon{
     background-color: #fff;
-}
+}*/
 
 .icon{
     width: 4rem;
     height: 4rem;
-    /*padding: .2rem;*/
-    /*fill: #2f2841;*/
-    border: 1px solid red;
     border-radius: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer{
     width: 100%;
