@@ -428,14 +428,23 @@ header, #sobre, #projetos{
     font-size: 2.5rem;
     color: var(--text-verde);
 }
-/*
-.div_conteiner span{
-    width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid #fff;
-}*/
 
+#linkedin{
+    fill: #0288D1;
+}
 
+.item_icon{
+    background-color: #fff;
+}
+
+.icon{
+    width: 4rem;
+    height: 4rem;
+    /*padding: .2rem;*/
+    /*fill: #2f2841;*/
+    border: 1px solid red;
+    border-radius: 15px;
+}
 
 
 
