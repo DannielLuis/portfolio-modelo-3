@@ -55,12 +55,13 @@ window.onload = function(){
     location.href = "index.html#sobre";
     updateUrl(dataUrl)
 }*/
-/*
+
 window.addEventListener("load", () => {
     //location.href = "index.html#sobre";
-    location.href = "index.html#projetos";
+    //location.href = "index.html#projetos";
+    location.href = "index.html#contatos";
     updateUrl(dataUrl)
-});*/
+});
 
 const myClick = () => {
     btn_hamburger.classList.remove("clicked");
