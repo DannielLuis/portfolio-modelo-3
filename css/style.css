@@ -376,9 +376,22 @@ header, #sobre, #projetos{
     border: none;
 }
 
+#contatos{
+    width: 100%;
+    height: 85vh;
+    background-color: var(--bg);
+}
+
+#contatos .conteiner{
+    width: 90%;
+    height: 84%;
+    background-color: var(--bg2);
+}
+
 footer{
     width: 100%;
-    height: 70px;
+    /*height: 70px;*/
+    height: 15vh;
     background-color: #181d23;
 }
 
