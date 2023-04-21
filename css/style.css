@@ -388,6 +388,30 @@ header, #sobre, #projetos{
     background-color: var(--bg2);
 }
 
+.div_conteiner{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 20rem;
+    height: 85%;
+    /*border: 1px solid red;*/
+    flex-direction: column;
+}
+.div_conteiner div{
+    width: 100%;
+    margin-bottom: 1rem;
+    /*border: 1px solid #fff;*/
+}
+
+.contato_linkedin, .contato_github{
+    font-size: 2rem;
+    color: var(--text-verde);
+}
+.div_conteiner span{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #fff;
+}
+
 footer{
     width: 100%;
     /*height: 70px;*/
