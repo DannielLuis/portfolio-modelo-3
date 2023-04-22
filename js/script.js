@@ -93,6 +93,10 @@ link[2].addEventListener('click', () => {
     btnClick()
     myTime(15)
 });
+link[3].addEventListener('click', () => {
+    btnClick()
+    myTime(15)
+});
 
 btn1.addEventListener("click", () => {
     abrirProjeto(url)
