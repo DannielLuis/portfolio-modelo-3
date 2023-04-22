@@ -78,6 +78,8 @@ btn_hamburger.addEventListener("click", btnClick);
 itensMenu[0].addEventListener("click", () => myTime(15));
 itensMenu[1].addEventListener("click", () => myTime(15));
 itensMenu[2].addEventListener("click", () => myTime(15));
+itensMenu[3].addEventListener("click", () => myTime(15));
+
 
 link[0].addEventListener('click', () => {
     btnClick()
