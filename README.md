@@ -1,6 +1,5 @@
 # Portfolio
-
-Este é um projeto simples ultilizando html, css e javascript.
+Este é um projeto simples ultilizando html, css e javascript, projeto base para o meu portfolio oficial.
 
 ## Projeto em constante atualização
 
