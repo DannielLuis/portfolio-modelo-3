@@ -10,18 +10,12 @@ const menu_mobile = document.querySelector(".menu_mobile");
 
 const itensMenu = document.querySelectorAll(".menu li")
 const link = document.querySelectorAll(".menu_mobile li");
-/*const btn_sobre = document.getElementById("btn_sobre");
-const btn_cursos = document.getElementById("btn_cursos");
-const sobre = document.querySelector(".conteiner_sobre");
-const cursos = document.querySelector(".conteiner_cursos");*/
 
 const url = "./"
 const btn1 = document.getElementById("btn1");
 
 function myscroll(){
-    //console.log(html1.scrollTop);
     if(html1.scrollTop > 50) {
-        //alert("Maior que 60")
         navbar.classList.add("navbar-bg");
     }else{
         navbar.classList.remove("navbar-bg");
@@ -49,19 +43,6 @@ function abrirProjeto(url){
     const win = window.open(url, "blank");
     win.focus();
 };
-
-/*
-window.onload = function(){
-    location.href = "index.html#sobre";
-    updateUrl(dataUrl)
-}*/
-/*
-window.addEventListener("load", () => {
-    //location.href = "index.html#sobre";
-    //location.href = "index.html#projetos";
-    location.href = "index.html#contatos";
-    updateUrl(dataUrl)
-});*/
 
 const myClick = () => {
     btn_hamburger.classList.remove("clicked");
@@ -103,13 +84,3 @@ btn1.addEventListener("click", () => {
 }
 );
 
-/*
-btn_sobre.addEventListener("click", () => {
-    sobre.classList.add("ativo");
-    cursos.classList.remove("ativo");
-});
-
-btn_cursos.addEventListener("click", () => {
-    sobre.classList.remove("ativo");
-    cursos.classList.add("ativo");
-});*/
