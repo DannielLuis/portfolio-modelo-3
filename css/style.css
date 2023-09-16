@@ -422,13 +422,7 @@ footer p a{
     color: var(--text-verde-2);
 }
 
-
-@media screen and (max-width: 768px){
-    .navbar{
-        padding: 0 8%;
-        background-color: var(--bg5);
-    }
-
+@media screen and (max-width: 848px){
     .menu{
         display: none;
     }
@@ -436,6 +430,21 @@ footer p a{
     .btn-hamburger{
         display: block;
     }
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        padding: 0 8%;
+        background-color: var(--bg5);
+    }
+
+    /*.menu{
+        display: none;
+    }
+
+    .btn-hamburger{
+        display: block;
+    }*/
 
     #sobre, #projetos, #projetos .conteiner{
         height: auto;
